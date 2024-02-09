@@ -654,10 +654,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7f68574982358046bba19302ce39ec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
-  turnspeed: 0
-  horizontalInput: 0
-  forwardInput: 0
 --- !u!1 &902501470 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1884074337756752357, guid: cb04eea70ee14ab49b68d12e2cbbf680, type: 3}
