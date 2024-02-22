@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6937668669735789}
   - component: {fileID: 6655788459453534352}
   - component: {fileID: 5489020306943255136}
+  - component: {fileID: 4692064130278262201}
   m_Layer: 0
   m_Name: Animal_Chick
   m_TagString: Untagged
@@ -69,6 +70,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
+--- !u!114 &4692064130278262201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072371098182118367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed6dc00e89d2dc4aa9715507c46d610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1252700013143482214
 GameObject:
   m_ObjectHideFlags: 0
