@@ -438,13 +438,13 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1
+    width: 0.4
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 1153.4
   field of view: 45
   orthographic: 1
-  orthographic size: 15.198265
+  orthographic size: 24.59
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -635,8 +635,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalInput: 0
-  xRange: 10
-  speed: 10
+  xRange: 20
+  speed: 20
   projectilePrefab: {fileID: 7601631370535098890, guid: b24ae7b98e872bf4fa72c2ffb279b51e, type: 3}
 --- !u!1 &1590138454
 GameObject:
