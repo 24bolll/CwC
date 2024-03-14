@@ -16,6 +16,8 @@ public class PlayerControllerX : MonoBehaviour
     private AudioSource playerAudio;
     public AudioClip moneySound;
     public AudioClip explodeSound;
+    public AudioClip bounceSound;
+    public float ceiling = 14.36f;
 
 
     // Start is called before the first frame update
@@ -36,6 +38,12 @@ public class PlayerControllerX : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && !gameOver)
         {
             playerRb.AddForce(Vector3.up * floatForce);
+        }
+
+        if (transform.position.y > ceiling)
+        {
+            transform.position = new Vector3(transform.position.x, ceiling, transform.position.z);
+            playerRb.velocity = Vector3.zero;
         }
     }
 
@@ -60,6 +68,13 @@ public class PlayerControllerX : MonoBehaviour
 
         }
 
+        else if (other.gameObject.CompareTag("Ground"))
+        {
+            playerRb.AddForce(Vector3.up * 25, ForceMode.Impulse);
+            playerAudio.PlayOneShot(bounceSound, 1.0f);
+           
+
+        }
     }
 
 }
