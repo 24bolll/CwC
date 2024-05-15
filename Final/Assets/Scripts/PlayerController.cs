@@ -10,10 +10,12 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    private float speed = 20;
-    private float turnspeed = 45;
+    private float speed = 10;
+    private float turnspeed = 25;
+    private float rotationspeed = 20;
     private float horizontalInput;
     private float forwardInput;
+    
     // Update is called once per frame
     void Update()
     {
@@ -24,5 +26,11 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
         // Rotates the car based on horizontal input
         transform.Rotate(Vector3.up, turnspeed * horizontalInput * Time.deltaTime);
+
+         if (Input.GetKey(KeyCode.F))
+         {
+             transform.Translate(Vector3.up * Time.deltaTime * speed);
+             transform.Rotate(Vector3.forward * Time.deltaTime * rotationspeed);
+         }
     }
 }
